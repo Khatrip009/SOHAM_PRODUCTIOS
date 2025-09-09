@@ -1,143 +1,149 @@
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 50) {
-                header.classList.add('header--scrolled');
-            } else {
-                header.classList.remove('header--scrolled');
-            }
-        });
+// ================================
+// Responsive Nav Toggle
+// ================================
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.querySelector(".nav-links");
+const header = document.getElementById("mainHeader");
 
-        // Mobile navigation toggle
-        const navToggle = document.querySelector('.nav-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        
-        navToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            navToggle.setAttribute('aria-expanded', navLinks.classList.contains('active'));
-        });
+// Toggle menu on mobile
+if (navToggle) {
+  navToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+}
 
-        // Close mobile nav when clicking on links
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                navToggle.setAttribute('aria-expanded', false);
-            });
-        });
+// Header Scroll Animation (Logo center -> left)
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    header?.classList.add("header--scrolled");
+  } else {
+    header?.classList.remove("header--scrolled");
+  }
+});
 
-        // Visitor counter
-        const updateViewCounts = () => {
-            // Simulate API call for total views
-            const totalViews = Math.floor(Math.random() * 1000) + 500;
-            document.getElementById('totalViews').textContent = totalViews.toLocaleString('en-IN');
-            
-            // Local visits counter
-            let yourVisits = localStorage.getItem('soham-your-visits') || 0;
-            yourVisits = Number(yourVisits) + 1;
-            localStorage.setItem('soham-your-visits', yourVisits);
-            document.getElementById('yourVisits').textContent = yourVisits.toLocaleString('en-IN');
-        };
+// ================================
+// Static Products (Index page demo)
+// ================================
+const products = [
+  { name: "Kids T-Shirt", description: "Soft, breathable fabrics for maximum comfort.", image: "images/kids01.jpeg", hsn: "6109", thumbs: ["images/kids01.jpeg","images/kids02.jpeg"] },
+  { name: "Track Pants", description: "Durable and stylish bottoms for active wear.", image: "images/trackpants01.jpeg", hsn: "6112", thumbs: ["images/track01.jpeg","images/track02.jpeg"] },
+  { name: "Women Suit", description: "Elegant design, premium finishing for modern women.", image: "images/women01.jpeg", hsn: "6204", thumbs: ["images/women01.jpeg"] },
+  { name: "Vests", description: "Soft, lightweight vests for everyday comfort.", image: "images/vests01.jpeg", hsn: "6208", thumbs: ["images/vests01.jpeg"] },
+  { name: "Polyester T-Shirt", description: "Durable and vibrant, perfect for active wear.", image: "images/poly01.jpeg", hsn: "6109", thumbs: ["images/poly01.jpeg","images/poly02.jpeg"] },
+  { name: "Plazo Pants", description: "Elegant flowing comfort, crafted with Lycra.", image: "images/plazo01.jpeg", hsn: "6110", thumbs: ["images/plazo01.jpeg","images/plazo02.jpeg"] },
+  { name: "Dhoti Pants", description: "A blend of tradition and style for modern fashion.", image: "images/dhoti01.jpeg", hsn: "6110", thumbs: ["images/dhoti01.jpeg","images/dhoti02.jpeg"] },
+  { name: "Harem Pants", description: "Relaxed and trendy Lycra harem pants for all-day comfort.", image: "images/heram01.jpeg", hsn: "6205", thumbs: ["images/heram01.jpeg","images/heram02.jpeg"] }
+];
 
-        // Form submission
-        const contactForm = document.getElementById('contactForm');
-        
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Basic validation
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const phone = document.getElementById('phone').value.trim();
-            const message = document.getElementById('message').value.trim();
-            
-            if (!name || !email || !phone || !message) {
-                alert('Please fill in all fields');
-                return;
-            }
-            
-            // Show success message (in a real implementation, this would send to a server)
-            alert('Thank you for your message! We will get back to you soon.');
-            contactForm.reset();
-        });
+const productsGrid = document.getElementById("productsGrid");
 
-        // Product image gallery functionality
-        document.querySelectorAll('[data-card]').forEach(card => {
-            const main = card.querySelector('.main-image');
-            const thumbs = card.querySelectorAll('.thumb');
-            
-            thumbs.forEach(t => {
-                t.addEventListener('click', () => {
-                    const url = t.getAttribute('data-full');
-                    main.src = url;
-                    thumbs.forEach(x => x.classList.remove('active'));
-                    t.classList.add('active');
-                });
-            });
-        });
+if (productsGrid) {
+  products.forEach(product => {
+    const card = document.createElement("div");
+    card.classList.add("product-card");
 
-        // Load More functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const grid = document.querySelector('.products-grid');
-            const cards = grid ? Array.from(grid.querySelectorAll('[data-card]')) : [];
-            const loadMoreBtn = document.getElementById('loadMore');
-            
-            if (!grid || !cards.length || !loadMoreBtn) return;
-            
-            // Show first 4 products initially
-            cards.forEach((card, i) => {
-                if (i < 4) {
-                    card.classList.remove('hidden');
-                    setTimeout(() => {
-                        card.classList.add('visible');
-                    }, 100 * i);
-                }
-            });
-            
-            let visibleCount = 4;
-            
-            loadMoreBtn.addEventListener('click', () => {
-                // Show next 4 products
-                const nextCards = cards.slice(visibleCount, visibleCount + 4);
-                
-                nextCards.forEach((card, i) => {
-                    card.classList.remove('hidden');
-                    setTimeout(() => {
-                        card.classList.add('visible');
-                    }, 100 * i);
-                });
-                
-                visibleCount += nextCards.length;
-                
-                // Hide button if all products are visible
-                if (visibleCount >= cards.length) {
-                    loadMoreBtn.classList.add('hidden');
-                }
-            });
-            
-            // Hide button if all products are already visible
-            if (visibleCount >= cards.length) {
-                loadMoreBtn.classList.add('hidden');
-            }
-        });
+    card.innerHTML = `
+      <div class="main-image-wrap">
+        <img src="${product.image}" alt="${product.name}" class="main-image">
+      </div>
+      <div class="details">
+        <h3>${product.name}</h3>
+        <p class="desc">${product.description}</p>
+        <span class="hsn">HSN: ${product.hsn}</span>
+      </div>
+      <div class="thumbs">
+        ${product.thumbs.map(t => `<img src="${t}" alt="thumb">`).join("")}
+      </div>
+    `;
 
-        // Initialize animations
-        document.addEventListener('DOMContentLoaded', () => {
-            const animatedElements = document.querySelectorAll('.hero-content, .usp-card');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1 });
-            
-            animatedElements.forEach(el => {
-                el.style.opacity = '0';
-                observer.observe(el);
-            });
-            
-            // Initialize view counts
-            updateViewCounts();
-        });
+    // thumbnail click → change main image
+    card.querySelectorAll(".thumbs img").forEach(thumb => {
+      thumb.addEventListener("click", () => {
+        card.querySelector(".main-image").src = thumb.src;
+      });
+    });
+
+    productsGrid.appendChild(card);
+  });
+}
+
+
+// Animate counters
+function animateCounters() {
+  const counters = document.querySelectorAll('.stat-value');
+  const speed = 200;
+
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      let count = +counter.innerText.replace(/\D/g,'');
+      const increment = Math.ceil(target / speed);
+
+      if (count < target) {
+        counter.innerText = count + increment;
+        setTimeout(updateCount, 20);
+      } else {
+        if (target >= 10000000) {
+          counter.innerText = "5 Cr+";
+        } else {
+          counter.innerText = target + "+";
+        }
+      }
+    };
+    updateCount();
+  });
+}
+
+// Intersection Observer for animations
+const fadeElements = document.querySelectorAll('.fade-up');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      if (entry.target.classList.contains('quality-stats')) {
+        animateCounters(); // trigger counters only once
+      }
+    }
+  });
+}, { threshold: 0.3 });
+
+// Observe each fade element
+fadeElements.forEach(el => observer.observe(el));
+
+// ================================
+// Highlight Active Navigation Link
+// ================================
+document.addEventListener("DOMContentLoaded", () => {
+  const navToggle = document.getElementById("navToggle");
+  const navLinks = document.querySelector(".nav-links");
+  const header = document.getElementById("mainHeader");
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  }
+
+  // Header Scroll Animation
+  window.addEventListener("scroll", () => {
+    if (header) {
+      if (window.scrollY > 100) {
+        header.classList.add("header--scrolled");
+      } else {
+        header.classList.remove("header--scrolled");
+      }
+    }
+  });
+});
+
+
+  document.querySelectorAll(".accordion").forEach(btn => {
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("active");
+      const panel = btn.nextElementSibling;
+      if (panel && panel.classList.contains("accordion-panel")) {
+        panel.style.display = panel.style.display === "block" ? "none" : "block";
+      }
+    });
+  });
+
