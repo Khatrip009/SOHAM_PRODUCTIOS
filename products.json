@@ -1,0 +1,788 @@
+{
+  "categories": [
+{
+  "id": "lycra-harem",
+  "name": "Lycra Harem Pants",
+  "products": [
+    {
+      "id": "lycra-harem-01",
+      "name": "Ladies Printed Lycra Harem Pants",
+      "price": "₹ 40/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "180 Piece",
+      "brand": "Soham Productions",
+      "style": "Harem Pants",
+      "fabric": "Polyester",
+      "waist": "28 - 40 Inch",
+      "pattern": "Floral Printed",
+      "color": "Multicolor",
+      "occasion": "Daily Wear",
+      "fit": "Regular Fit",
+      "washCare": "Machine Wash",
+      "extra": {
+        "portOfDispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/heram01.jpeg","images/heram02.jpeg","images/heram03.jpeg","images/heram04.jpeg"]
+    },
+    {
+      "id": "lycra-harem-02",
+      "name": "Ladies Lycra Harem Pants",
+      "price": "₹ 48/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "style": "Harem Pants",
+      "fabric": "Polyester, Lycra Polyester",
+      "waist": "28 - 40 Inch",
+      "color": "Multicolor",
+      "occasion": "Daily Wear",
+      "extra": {
+        "portOfDispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/heram02.jpeg","images/heram03.jpeg","images/heram04.jpeg","images/heram01.jpeg"]
+    },
+    {
+      "id": "lycra-harem-03",
+      "name": "Ladies Lycra Printed Harem Pants",
+      "price": "₹ 40/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Polyester, Lycra Polyester",
+      "waist": "28-40 Inch",
+      "pattern": "Printed, Floral Printed",
+      "color": "Multicolor",
+      "occasion": "Daily Wear",
+      "extra": {
+        "paymentTerms": "T/T (Bank Transfer), D/P, D/A",
+        "portOfDispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/heram03.jpeg","images/heram01.jpeg","images/heram02.jpeg","images/heram04.jpeg"]
+    },
+    {
+      "id": "lycra-harem-04",
+      "name": "Ladies Flower Printed Harem Pants",
+      "price": "₹ 48/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "style": "Harem Pants",
+      "fabric": "Polyester, Lycra Polyester",
+      "waist": "28 - 40 Inch",
+      "pattern": "Floral Printed, Printed",
+      "color": "Multicolor",
+      "fit": "Regular Fit",
+      "washCare": "Machine Wash",
+      "occasion": "Daily Wear",
+      "extra": {
+        "portOfDispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/heram04.jpeg","images/heram01.jpeg","images/heram02.jpeg","images/heram03.jpeg"]
+    },
+    {
+      "id": "lycra-harem-05",
+      "name": "Kids Printed Harem Pants",
+      "price": "₹ 24/Piece",
+      "priceRange": "Rs. 20-35/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Lycra, Polyester",
+      "pattern": "Printed, Floral Printed",
+      "color": "Multicolor",
+      "size": "S, M, L, OL",
+      "occasion": "Daily Wear",
+      "extra": {
+        "paymentTerms": "L/C, T/T, D/P, D/A",
+        "portOfDispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/kids01.jpeg","images/kids02.jpeg","images/kids03.jpeg","images/kids04.jpg"]
+    },
+    {
+      "id": "lycra-harem-06",
+      "name": "Ladies Harem Pants (Black and Purple)",
+      "price": "₹ 38/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "style": "Harem Pants",
+      "fabric": "Lycra Polyester",
+      "waist": "28-40 Inch",
+      "color": "Black and Purple",
+      "occasion": "Daily Wear",
+      "images": ["images/heram01.jpeg","images/heram02.jpeg","images/heram03.jpeg","images/heram04.jpeg"]
+    },
+    {
+      "id": "lycra-harem-07",
+      "name": "Ladies Comfortable Harem Pants",
+      "price": "₹ 48/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "style": "Harem Pants",
+      "fabric": "Lycra Polyester",
+      "waist": "28-40 Inch",
+      "pattern": "Printed",
+      "occasion": "Daily Wear",
+      "images": ["images/heram02.jpeg","images/heram03.jpeg","images/heram04.jpeg","images/heram01.jpeg"]
+    }
+  ]
+},
+{
+  "id": "harem",
+  "name": "Harem Pants",
+  "products": [
+    {
+      "id": "harem-01",
+      "name": "Ladies Lycra Polyester Harem Pants",
+      "price": "₹ 40/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "style": "Harem Pants",
+      "fabric": "Lycra Polyester, Polyester",
+      "waist": "28-40 Inch",
+      "pattern": "Printed, Floral Printed",
+      "color": "Multicolor",
+      "occasion": "Daily Wear",
+      "images": ["images/heram01.jpeg","images/heram02.jpeg","images/heram03.jpeg","images/heram04.jpeg"]
+    },
+    {
+      "id": "harem-02",
+      "name": "Kids Printed Lycra Harem Pants",
+      "price": "₹ 24/Piece",
+      "priceRange": "Rs. 20-35/piece",
+      "moq": "180 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Polyester",
+      "pattern": "Floral Printed, Printed",
+      "color": "Multicolor",
+      "size": "S, M, L, OL",
+      "occasion": "Daily Wear",
+      "extra": {
+        "paymentTerms": "T/T (Bank Transfer), D/A",
+        "portOfDispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/kids01.jpeg","images/kids02.jpeg","images/kids03.jpeg","images/kids04.jpg"]
+    },
+    {
+      "id": "harem-03",
+      "name": "Ladies Multicolor Printed Lycra Harem Pants",
+      "price": "₹ 29/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "style": "Harem Pants",
+      "fabric": "Lycra Polyester, Polyester",
+      "waist": "28-36 Inch",
+      "pattern": "Printed",
+      "color": "Multicolor",
+      "occasion": "Daily Wear",
+      "extra": {
+        "paymentTerms": "T/T (Bank Transfer), D/A",
+        "portOfDispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/heram02.jpeg","images/heram03.jpeg","images/heram01.jpeg","images/heram04.jpeg"]
+    }
+  ]
+},
+{
+  "id": "lycra-harem",
+  "name": "Lycra Harem Pants",
+  "products": [
+    {
+      "id": "lycra-harem-01",
+      "name": "Ladies Printed Lycra Harem Pants",
+      "price": "₹ 40/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "180 Piece",
+      "brand": "Soham Productions",
+      "style": "Harem Pants",
+      "fabric": "Polyester",
+      "waist": "28-40 Inch",
+      "pattern": "Floral Printed",
+      "color": "Multicolor",
+      "occasion": "Daily Wear",
+      "fitting": "Regular Fit",
+      "washCare": "Machine Wash",
+      "images": ["images/heram01.jpeg","images/heram02.jpeg","images/heram03.jpeg","images/heram04.jpeg"]
+    },
+    {
+      "id": "lycra-harem-02",
+      "name": "Ladies Lycra Harem Pants",
+      "price": "₹ 48/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "style": "Harem Pants",
+      "fabric": "Polyester, Lycra Polyester",
+      "waist": "28-40 Inch",
+      "color": "Multicolor",
+      "occasion": "Daily Wear",
+      "extra": {
+        "portOfDispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/heram02.jpeg","images/heram03.jpeg","images/heram01.jpeg","images/heram04.jpeg"]
+    },
+    {
+      "id": "lycra-harem-03",
+      "name": "Ladies Lycra Printed Harem Pants",
+      "price": "₹ 40/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Polyester, Lycra Polyester",
+      "waist": "28-40 Inch",
+      "pattern": "Printed, Floral Printed",
+      "color": "Multicolor",
+      "occasion": "Daily Wear",
+      "extra": {
+        "paymentTerms": "T/T (Bank Transfer), D/P, D/A",
+        "portOfDispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/heram03.jpeg","images/heram01.jpeg","images/heram02.jpeg","images/heram04.jpeg"]
+    },
+    {
+      "id": "lycra-harem-04",
+      "name": "Ladies Flower Printed Harem Pants",
+      "price": "₹ 48/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "style": "Harem Pants",
+      "fabric": "Polyester, Lycra Polyester",
+      "waist": "28-40 Inch",
+      "pattern": "Floral Printed, Printed",
+      "color": "Multicolor",
+      "occasion": "Daily Wear",
+      "fitting": "Regular Fit",
+      "washCare": "Machine Wash",
+      "images": ["images/heram04.jpeg","images/heram01.jpeg","images/heram02.jpeg","images/heram03.jpeg"]
+    },
+    {
+      "id": "lycra-harem-05",
+      "name": "Ladies Printed Harem Pants",
+      "price": "₹ 48/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "180 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Lycra Polyester",
+      "waist": "28-40 Inch",
+      "pattern": "Printed",
+      "color": "Red, White, Black",
+      "occasion": "Daily Wear",
+      "fitting": "Regular Fit",
+      "washCare": "Machine Wash",
+      "images": ["images/heram01.jpeg","images/heram02.jpeg","images/heram03.jpeg","images/heram04.jpeg"]
+    },
+    {
+      "id": "lycra-harem-06",
+      "name": "Kids Printed Harem Pants",
+      "price": "₹ 24/Piece",
+      "priceRange": "Rs. 20-35/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Lycra, Polyester",
+      "pattern": "Printed, Floral Printed",
+      "color": "Multicolor",
+      "size": "S, M, L, OL",
+      "occasion": "Daily Wear",
+      "extra": {
+        "paymentTerms": "L/C, T/T, D/P, D/A",
+        "portOfDispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/kids01.jpeg","images/kids02.jpeg","images/kids03.jpeg","images/kids04.jpg"]
+    },
+    {
+      "id": "lycra-harem-07",
+      "name": "Lycra Ladies Printed Harem Pants",
+      "price": "₹ 48/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Polyester, Lycra",
+      "waist": "28-40 Inch",
+      "pattern": "Printed, Floral Printed",
+      "color": "Multicolor",
+      "occasion": "Daily Wear",
+      "images": ["images/heram02.jpeg","images/heram04.jpeg","images/heram01.jpeg","images/heram03.jpeg"]
+    },
+    {
+      "id": "lycra-harem-08",
+      "name": "Ladies Harem Pants",
+      "price": "₹ 38/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Lycra Polyester",
+      "waist": "28-40 Inch",
+      "color": "Black and Purple",
+      "occasion": "Daily Wear",
+      "images": ["images/heram03.jpeg","images/heram01.jpeg","images/heram02.jpeg","images/heram04.jpeg"]
+    },
+    {
+      "id": "lycra-harem-09",
+      "name": "Ladies Printed Harem Pants",
+      "price": "₹ 48/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Lycra Polyester",
+      "waist": "26-40 Inch",
+      "pattern": "Printed",
+      "color": "Black and Blue",
+      "occasion": "Daily Wear",
+      "fitting": "Regular Fit",
+      "washCare": "Machine Wash",
+      "extra": {
+        "paymentTerms": "T/T, D/P, D/A",
+        "portOfDispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/heram04.jpeg","images/heram02.jpeg","images/heram03.jpeg","images/heram01.jpeg"]
+    },
+    {
+      "id": "lycra-harem-10",
+      "name": "Kids Printed Harem Pants",
+      "price": "₹ 29/Piece",
+      "priceRange": "Rs. 20-35/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Lycra Polyester",
+      "pattern": "Printed",
+      "color": "Multicolor",
+      "size": "S, M, L, OL",
+      "occasion": "Daily Wear",
+      "extra": {
+        "paymentTerms": "T/T, D/P, D/A",
+        "portOfDispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/kids02.jpeg","images/kids03.jpeg","images/kids01.jpeg","images/kids04.jpg"]
+    },
+    {
+      "id": "lycra-harem-11",
+      "name": "Ladies Harem Pants",
+      "price": "₹ 38/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Lycra Polyester",
+      "waist": "28-40 Inch",
+      "color": "Yellow and Black",
+      "occasion": "Daily Wear",
+      "images": ["images/heram01.jpeg","images/heram02.jpeg","images/heram04.jpeg","images/heram03.jpeg"]
+    },
+    {
+      "id": "lycra-harem-12",
+      "name": "Ladies Fancy Printed Harem Pants",
+      "price": "₹ 38/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Lycra Polyester",
+      "waist": "28-40 Inch",
+      "pattern": "Printed",
+      "color": "Multicolor",
+      "occasion": "Daily Wear",
+      "extra": {
+        "paymentTerms": "T/T, D/P, D/A",
+        "portOfDispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/heram03.jpeg","images/heram01.jpeg","images/heram02.jpeg","images/heram04.jpeg"]
+    },
+    {
+      "id": "lycra-harem-13",
+      "name": "Ladies Comfortable Harem Pants",
+      "price": "₹ 48/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Lycra Polyester",
+      "waist": "28-40 Inch",
+      "pattern": "Printed",
+      "occasion": "Daily Wear",
+      "images": ["images/heram02.jpeg","images/heram01.jpeg","images/heram04.jpeg","images/heram03.jpeg"]
+    },
+    {
+      "id": "lycra-harem-14",
+      "name": "Kids Flower Printed Harem Pants",
+      "price": "₹ 29/Piece",
+      "priceRange": "Rs. 20-35/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Lycra Polyester",
+      "pattern": "Printed",
+      "color": "Multicolor",
+      "size": "S, M, L, OL",
+      "occasion": "Daily Wear",
+      "extra": {
+        "paymentTerms": "T/T, D/P, D/A",
+        "portOfDispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/kids03.jpeg","images/kids02.jpeg","images/kids01.jpeg","images/kids04.jpg"]
+    },
+    {
+      "id": "lycra-harem-15",
+      "name": "Kids Printed Harem Pants",
+      "price": "₹ 26/Piece",
+      "priceRange": "Rs. 20-35/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Polyester, Lycra",
+      "pattern": "Printed",
+      "color": "Multicolor",
+      "size": "S, M, L, OL",
+      "occasion": "Daily Wear",
+      "extra": {
+        "paymentTerms": "T/T, D/P, D/A",
+        "portOfDispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/kids04.jpg","images/kids01.jpeg","images/kids02.jpeg","images/kids03.jpeg"]
+    },
+    {
+      "id": "lycra-harem-16",
+      "name": "Ladies Full Length Printed Harem Pants",
+      "price": "₹ 48/Piece",
+      "priceRange": "Rs. 35-50/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Lycra, Polyester",
+      "waist": "28-40 Inch",
+      "pattern": "Printed, Floral Printed",
+      "color": "Multicolor",
+      "occasion": "Daily Wear",
+      "extra": {
+        "paymentTerms": "T/T, D/P, D/A",
+        "portOfDispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/heram04.jpeg","images/heram01.jpeg","images/heram02.jpeg","images/heram03.jpeg"]
+    },
+    {
+      "id": "lycra-harem-17",
+      "name": "Kids Printed Harem Pants",
+      "price": "Get Latest Price",
+      "priceRange": "Rs. 20-35/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Lycra Polyester",
+      "pattern": "Printed",
+      "color": "Multicolor",
+      "size": "S, M, L, OL",
+      "occasion": "Daily Wear",
+      "images": ["images/kids01.jpeg","images/kids02.jpeg","images/kids03.jpeg","images/kids04.jpg"]
+    }
+  ]
+},
+{
+  "id": "track",
+  "name": "Track Pants",
+  "products": [
+    {
+      "id": "track-01",
+      "name": "Men Track Pants",
+      "price": "₹ 100/Piece",
+      "priceRange": "₹ 100/Piece",
+      "moq": "60 Piece",
+      "brand": "Soham Productions",
+      "gender": "Male",
+      "size": "S",
+      "fabric": "Lycra",
+      "color": "Black",
+      "fitting": "Slim Fit",
+      "usage": "Regular Wear, Sport Wear, Comfort Wear",
+      "country": "Made in India",
+      "extra": {
+        "itemCode": "6207",
+        "packaging": "Each piece in pp bag with 12 piece bundle"
+      },
+      "images": ["images/track01.jpeg","images/track02.jpeg","images/track03.jpeg","images/track04.jpeg"]
+    },
+    {
+      "id": "track-02",
+      "name": "Zuric Track Pant Lower Pants",
+      "price": "₹ 100/Piece",
+      "priceRange": "₹ 100/Piece",
+      "moq": "60 Piece",
+      "brand": "Soham Productions",
+      "style": "Track Pant",
+      "description": "Track Pants are like Joggers but are usually made from materials like polyester that is smooth, soft, comfortable and wrinkle-free. These pants quickly absorb sweats and are ideal for athletics & workouts.",
+      "fabric": "Polyester / Lycra blend",
+      "color": "Assorted",
+      "fitting": "Slim Fit",
+      "occasion": "Sports, Daily Wear",
+      "extra": {
+        "packaging": "Each piece in pp bag with 12 piece bundle"
+      },
+      "images": ["images/trackpants01.jpeg","images/track01.jpeg","images/track02.jpeg","images/track03.jpeg"]
+    },
+    {
+      "id": "track-03",
+      "name": "Lycra Pant",
+      "price": "₹ 100/Piece",
+      "priceRange": "₹ 100/Piece",
+      "brand": "Soham Productions",
+      "fabric": "Lycra",
+      "description": "Premium Lycra pant suitable for casual and sports wear. Smooth, wrinkle-free and highly durable.",
+      "occasion": "Daily Wear, Sports",
+      "extra": {
+        "manufacturerNote": "We are counted as reputed Manufacturer of Patiala Salwar, Rayon Palazzo and Supplier of Ladies Harem Pant, Kids Harem Pant, etc."
+      },
+      "images": ["images/track02.jpeg","images/track03.jpeg","images/track04.jpeg","images/track01.jpeg"]
+    }
+  ]
+},
+{
+  "id": "plazo",
+  "name": "Lycra Plazo",
+  "products": [
+    {
+      "id": "plazo-01",
+      "name": "Ladies Printed Lycra Harem Pants (Plazo Variant)",
+      "price": "₹ 48/Piece",
+      "priceRange": "₹ 35-50/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "style": "Harem Pants / Plazo",
+      "color": "Multicolor",
+      "fabric": "Polyester, Lycra Polyester",
+      "waist": "28-40 Inch",
+      "pattern": "Printed, Floral Printed",
+      "fitting": "Regular Fit",
+      "washCare": "Machine Wash",
+      "occasion": "Daily Wear",
+      "extra": {
+        "dispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/plazo01.jpeg","images/plazo02.jpeg","images/plazo03.jpeg","images/plazo04.jpeg"]
+    },
+    {
+      "id": "plazo-02",
+      "name": "Lycra Crush Ladies Palazzo Pants",
+      "price": "₹ 90/Piece",
+      "priceRange": "₹ 50-60/piece",
+      "moq": "120 Piece",
+      "brand": "Soham Productions",
+      "style": "Palazzo Pants",
+      "pattern": "Floral Printed",
+      "size": "Free Size XL",
+      "color": "Multicolor",
+      "appearance": "Casual Wear",
+      "fabric": "Lycra Polyester Crush",
+      "waist": "28-44 Inch",
+      "occasion": "Daily Wear",
+      "extra": {
+        "dispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/Soham_lycra_plazzo_01.jpg","images/Soham_lycra_plazzo_02.png","images/plazo02.jpeg","images/plazo03.jpeg"]
+    }
+  ]
+},
+{
+  "id": "dhoti",
+  "name": "Dhoti Pants",
+  "products": [
+    {
+      "id": "dhoti-01",
+      "name": "Polyester Floral Printed Dhoti Pants",
+      "price": "₹ 52/Piece",
+      "priceRange": "₹ 50-60/piece",
+      "moq": "180 Piece",
+      "brand": "Soham Productions",
+      "style": "Dhoti",
+      "color": "Multicolor",
+      "fabric": "Lycra Polyester",
+      "waist": "Free",
+      "size": "Free Size",
+      "pattern": "Printed",
+      "salwarType": "Dhoti",
+      "suitType": "Stitched",
+      "washCare": "Machine Wash",
+      "occasion": "Daily Wear",
+      "extra": {
+        "dispatch": "Surat",
+        "packaging": "6 Piece/Packet, 2 Dozen/Bundle"
+      },
+      "images": ["images/dhoti01.jpeg","images/dhoti02.jpeg","images/dhoti03.jpeg","images/dhoti04.jpeg"]
+    }
+  ]
+},
+{
+  "id": "kids-tshirt",
+  "name": "Kids T-Shirts",
+  "products": [
+    {
+      "id": "kids-tshirt-01",
+      "name": "Kids T Shirt",
+      "price": "₹ 50/Piece",
+      "priceRange": "₹ 50/piece",
+      "moq": "60 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Polyester",
+      "ageGroup": "7-9 Years",
+      "gender": "Unisex",
+      "color": "Multicolor",
+      "neck": "Round",
+      "sleeves": "Half Sleeves",
+      "pattern": "Printed",
+      "occasion": "Ethnic Wear",
+      "washCare": "Machine Wash",
+      "size": "S, M, L, XL",
+      "wearType": "Regular",
+      "gsm": "220 GSM",
+      "extra": {
+        "allSizes": "S M L XL",
+        "packaging": "PP Bag 6 piece packing"
+      },
+      "images": ["images/kids01.jpeg","images/kids02.jpeg","images/kids03.jpeg","images/kids04.jpg"]
+    }
+  ]
+},
+{
+  "id": "mens-tshirt",
+  "name": "Men’s T-Shirts",
+  "products": [
+    {
+      "id": "mens-tshirt-01",
+      "name": "Men’s T Shirt",
+      "price": "₹ 120/Piece",
+      "priceRange": "₹ 100–150/piece",
+      "moq": "60 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Lycra Polyester",
+      "color": "Multicolor",
+      "pattern": "Plain / Printed",
+      "neck": "Round / Polo",
+      "sleeves": "Half Sleeves",
+      "fittingType": "Regular Fit",
+      "occasion": "Casual / Sports Wear",
+      "washCare": "Machine Wash",
+      "size": "S, M, L, XL",
+      "extra": {
+        "usage": "Regular Wear, Sport Wear, Comfort Wear",
+        "origin": "Made in India",
+        "packaging": "Each piece in PP Bag, 12-piece bundle"
+      },
+      "images": ["images/men01.jpeg","images/men02.jpeg","images/men03.jpeg","images/men04.jpeg"]
+    }
+  ]
+},
+{
+  "id": "poly-tshirt",
+  "name": "Polyester T-Shirts",
+  "products": [
+    {
+      "id": "poly-tshirt-01",
+      "name": "Polyester T Shirt",
+      "price": "₹ 95/Piece",
+      "priceRange": "₹ 80–120/piece",
+      "moq": "60 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Polyester",
+      "color": "Multicolor",
+      "pattern": "Printed / Plain",
+      "neck": "Round Neck",
+      "sleeves": "Half Sleeves",
+      "fittingType": "Regular Fit",
+      "occasion": "Sports Wear, Casual Wear",
+      "washCare": "Machine Wash",
+      "size": "S, M, L, XL",
+      "extra": {
+        "gsm": "220 GSM Slub Cotton Blend (for some variants)",
+        "usage": "Daily Wear, Active Wear, Promotions",
+        "packaging": "6 Piece/Packet"
+      },
+      "images": ["images/poly01.jpeg","images/poly02.jpeg","images/poly03.jpeg","images/poly04.jpeg"]
+    },
+    {
+      "id": "poly-tshirt-02",
+      "name": "Polyester Women T Shirt",
+      "price": "₹ 100/Piece",
+      "priceRange": "₹ 90–130/piece",
+      "moq": "60 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Polyester Lycra",
+      "color": "Multicolor",
+      "pattern": "Printed",
+      "neck": "Round Neck",
+      "sleeves": "Half Sleeves",
+      "fittingType": "Slim Fit",
+      "occasion": "Casual / Fitness Wear",
+      "washCare": "Machine Wash",
+      "size": "S, M, L, XL",
+      "extra": {
+        "target": "Women Segment",
+        "packaging": "PP Bag, 6 Piece/Packet"
+      },
+      "images": ["images/polyW01.jpeg","images/polyW02.jpeg","images/polyW03.jpeg","images/polyW04.jpeg"]
+    }
+  ]
+},
+{
+  "id": "kids-tshirt",
+  "name": "Kids T-Shirts",
+  "products": [
+    {
+      "id": "kids-tshirt-01",
+      "name": "Kids Printed T Shirt",
+      "price": "₹ 50/Piece",
+      "priceRange": "₹ 45–70/piece",
+      "moq": "60 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Polyester / Cotton Blend",
+      "color": "Multicolor",
+      "pattern": "Printed",
+      "neck": "Round Neck",
+      "sleeves": "Half Sleeves",
+      "fittingType": "Regular Fit",
+      "occasion": "Daily Wear, School Wear, Casual",
+      "washCare": "Machine Wash",
+      "size": "S, M, L, XL (Kids)",
+      "extra": {
+        "ageGroup": "7–9 Years (other sizes available)",
+        "gsm": "220 GSM Slub Cotton",
+        "packaging": "PP Bag, 6 Piece Packing"
+      },
+      "images": ["images/kids01.jpeg","images/kids02.jpeg","images/kids03.jpeg","images/kids04.jpg"]
+    },
+    {
+      "id": "kids-tshirt-02",
+      "name": "Kids Unisex T Shirt",
+      "price": "₹ 55/Piece",
+      "priceRange": "₹ 50–75/piece",
+      "moq": "60 Piece",
+      "brand": "Soham Productions",
+      "fabric": "Polyester Lycra",
+      "color": "Multicolor",
+      "pattern": "Plain / Printed",
+      "neck": "Round / V-Neck",
+      "sleeves": "Half Sleeves",
+      "fittingType": "Comfort Fit",
+      "occasion": "Sports, Regular Wear",
+      "washCare": "Machine Wash",
+      "size": "S, M, L, XL (Kids)",
+      "extra": {
+        "gender": "Unisex",
+        "usage": "Daily Wear, Play Wear",
+        "packaging": "6 Piece/Packet"
+      },
+      "images": ["images/kids02.jpeg","images/kids03.jpeg","images/kids04.jpg","images/kids01.jpeg"]
+    }
+  ]
+}
+]}
