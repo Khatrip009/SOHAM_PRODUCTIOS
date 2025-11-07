@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Page Not Found | SOHAM PRODUCTIONS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at 30% 30%, #fff0f3, #ffe6eb, #ffd8e0);
+      overflow: hidden;
+      position: relative;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Fabric background flow */
+    .fabric {
+      position: absolute;
+      width: 140%;
+      height: 140%;
+      top: -20%;
+      left: -20%;
+      background: radial-gradient(circle at 20% 30%, rgba(255, 158, 188, 0.7), transparent 70%),
+                  radial-gradient(circle at 80% 70%, rgba(255, 200, 217, 0.7), transparent 70%);
+      filter: blur(80px);
+      animation: float 9s ease-in-out infinite alternate;
+      z-index: 0;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-40px); }
+    }
+
+    /* Floating sparkle particles */
+    .sparkle {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: radial-gradient(circle, gold 0%, transparent 70%);
+      border-radius: 50%;
+      opacity: 0.7;
+      animation: sparkleMove 10s linear infinite;
+    }
+
+    @keyframes sparkleMove {
+      0% { transform: translateY(0) scale(1); opacity: 0.8; }
+      50% { transform: translateY(-50px) scale(1.2); opacity: 1; }
+      100% { transform: translateY(0) scale(1); opacity: 0.8; }
+    }
+
+    .container {
+      text-align: center;
+      color: #333;
+      z-index: 1;
+      animation: fadeIn 1.5s ease-in-out;
+      position: relative;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      color: #ff668a;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 12px rgba(255, 153, 188, 0.5);
+    }
+
+    h1 {
+      font-size: 9rem;
+      font-weight: 700;
+      color: #ff668a;
+      text-shadow: 0 0 20px rgba(255, 102, 138, 0.4),
+                   0 0 50px rgba(255, 204, 221, 0.3);
+      animation: bounce 2s ease-in-out infinite;
+      position: relative;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* Stitch Line and Animation */
+    .stitch-area {
+      position: relative;
+      margin: 30px auto;
+      width: 260px;
+      height: 3px;
+      background: repeating-linear-gradient(to right, #ff668a 0 10px, transparent 10px 20px);
+      overflow: hidden;
+    }
+
+    .thread-line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 0;
+      background: linear-gradient(90deg, #ff668a, gold);
+      animation: stitchLine 4s linear infinite;
+    }
+
+    @keyframes stitchLine {
+      0% { width: 0; }
+      100% { width: 100%; }
+    }
+
+    .needle {
+      position: absolute;
+      top: -20px;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      animation: moveNeedle 4s linear infinite;
+    }
+
+    @keyframes moveNeedle {
+      0% { left: -50px; }
+      100% { left: calc(100% + 50px); }
+    }
+
+    .sewing-machine {
+      width: 50px;
+      height: 50px;
+    }
+
+    p {
+      font-size: 1.3rem;
+      color: #444;
+      margin: 20px 0;
+      line-height: 1.6;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 36px;
+      background: linear-gradient(135deg, #ff668a, #ffa3c1);
+      color: white;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      box-shadow: 0 5px 15px rgba(255, 102, 138, 0.4);
+      transition: 0.4s;
+    }
+
+    a:hover {
+      transform: scale(1.08);
+      background: linear-gradient(135deg, #ff3e6e, #ff7da1);
+      box-shadow: 0 0 20px rgba(255, 153, 188, 0.6);
+    }
+
+    /* Rotating decorative threads */
+    .thread {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border: 3px dashed rgba(255, 153, 188, 0.6);
+      border-radius: 50%;
+      animation: spin 12s linear infinite;
+      opacity: 0.5;
+    }
+
+    .thread:nth-child(1) { top: 8%; left: 15%; }
+    .thread:nth-child(2) { top: 75%; right: 10%; animation-delay: 3s; }
+    .thread:nth-child(3) { top: 50%; left: 70%; animation-delay: 5s; }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="fabric"></div>
+
+  <!-- Sparkle particles -->
+  <div class="sparkle" style="top:20%; left:30%; animation-delay:1s;"></div>
+  <div class="sparkle" style="top:60%; left:80%; animation-delay:3s;"></div>
+  <div class="sparkle" style="top:40%; left:10%; animation-delay:2s;"></div>
+  <div class="sparkle" style="top:75%; left:50%; animation-delay:4s;"></div>
+
+  <!-- Rotating thread decorations -->
+  <div class="thread"></div>
+  <div class="thread"></div>
+  <div class="thread"></div>
+
+  <div class="container">
+    <div class="logo">SOHAM PRODUCTIONS</div>
+    <h1>404</h1>
+
+    <!-- Animated Stitching Area -->
+    <div class="stitch-area">
+      <div class="thread-line"></div>
+      <div class="needle">
+        <svg class="sewing-machine" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="24" width="44" height="22" rx="2" fill="#ff9ebc" stroke="#ff668a" stroke-width="2"/>
+          <circle cx="18" cy="36" r="4" fill="#fff"/>
+          <rect x="30" y="30" width="8" height="8" rx="1.5" fill="#fff"/>
+          <rect x="44" y="30" width="6" height="8" rx="1.5" fill="#fff"/>
+          <path d="M28 20h10v4H28z" fill="#ff668a"/>
+          <circle cx="32" cy="20" r="2" fill="gold"/>
+        </svg>
+      </div>
+    </div>
+
+    <p>Oops! The thread seems to have slipped off the fabric.<br>
+       Let’s stitch you back to where you belong — in style.</p>
+    <a href="/">Back to Home</a>
+  </div>
+
+</body>
+</html>
