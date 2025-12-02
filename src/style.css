@@ -24,7 +24,7 @@
   --accent-2: #c69c6d;
 
   /* Header height for overlap fix */
-  --header-h: 150px;
+  --header-h: 100px;
 }
 
 /* ==============================
@@ -139,13 +139,13 @@ html { scroll-behavior: smooth; }
    HEADER WITH DOODLES
 ========================== */
 .header {
-  position: fixed; /* FIX: was absolute → now fixed */
+  position: fixed;
   top: 0; left: 0;
-  transition: var(--transition);
-  overflow: hidden;
-  padding: 10px 0;
   width: 100%;
-  height: fit-content;
+  z-index: 1000;
+  transition: var(--transition);
+  overflow: visible; /* allow dropdown escape */
+  padding: 6px 0;    /* reduced vertical padding */
   background-color: #DBAE75;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.49'%3E%3Ccircle fill='%23DBAE75' cx='50' cy='0' r='50'/%3E%3Cg fill='%23d8aa6e' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d5a567' cx='50' cy='100' r='50'/%3E%3Cg fill='%23d1a160' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ce9d5a' cx='50' cy='200' r='50'/%3E%3Cg fill='%23ca9953' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c6944d' cx='50' cy='300' r='50'/%3E%3Cg fill='%23c29047' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23be8c41' cx='50' cy='400' r='50'/%3E%3Cg fill='%23b5873f' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ac813e' cx='50' cy='500' r='50'/%3E%3Cg fill='%23a47c3d' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%239b773b' cx='50' cy='600' r='50'/%3E%3Cg fill='%2392713a' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%238a6c38' cx='50' cy='700' r='50'/%3E%3Cg fill='%23826636' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%237a6034' cx='50' cy='800' r='50'/%3E%3Cg fill='%23715b32' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%236a5530' cx='50' cy='900' r='50'/%3E%3Cg fill='%2362502d' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%235A4A2B' cx='50' cy='1000' r='50'/%3E%3C/g%3e%3C/svg%3E");
   background-attachment: fixed;
@@ -153,7 +153,9 @@ html { scroll-behavior: smooth; }
   box-shadow: var(--shadow-sm);
   z-index: 1000;
 }
+/* subtle stronger shadow when scrolled */
 .header.header--scrolled { box-shadow: var(--shadow-md); }
+
 
 .header__inner {
   position: relative;
@@ -161,10 +163,12 @@ html { scroll-behavior: smooth; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.5rem 0;
+  padding: 6px 0;      /* reduced */
+  gap: 6px;
   transition: var(--transition);
 }
 /* Gradient shimmer overlay */
+/* visual overlay preserved */
 .header::after {
   content: "";
   position: absolute;
@@ -179,33 +183,43 @@ html { scroll-behavior: smooth; }
 /* Logo */
 .logo {
   width: 120px;
-  height: 120px;
+  height: 80px;
   background: url("/logo.png") center/contain no-repeat; /* fixed path */
   transition: all 0.5s ease;
   transform: translateY(0) scale(1);
 }
 
 /* Company Name below logo */
+/* Company Name under logo */
 .header__inner h1 {
-  font-size: 1.6rem;
-  margin-top: 0.5rem;
+  font-size: 1.15rem; /* reduced */
+  margin-top: 0.3rem;
   color: #fff;
   font-family: 'Cinzel', serif;
-  letter-spacing: 2px;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  transition: all 0.5s ease;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.28);
+  transition: transform 0.45s ease, font-size 0.45s ease;
 }
 
 /* Scroll state → shrink & move left */
-.header.scrolled .logo {
-  width: 60px;
-  height: 60px;
-  transform: translate(-40%, -20%) scale(0.8);
+* Shrink-on-scroll: compact sizes */
+.header.scrolled .header__inner {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 4%;
+  align-items: center;
 }
+
+.header.scrolled .logo {
+  width: 48px;   /* scaled-down logo when scrolled */
+  height: 48px;
+  transform: translateX(-10%) translateY(-8%);
+}
+
 .header.scrolled .header__inner h1 {
-  font-size: 1.1rem;
+  font-size: 1rem;   /* smaller title while scrolled */
   margin: 0 0 0 10px;
-  transform: translateX(-20%);
+  transform: translateX(-10%);
 }
 
 /* NAVIGATION */
